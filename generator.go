@@ -96,7 +96,7 @@ func GeneratePreamble(preamble string) GenerateOption {
 func Render(types []TypescriptType, cfg ...GenerateOption) error {
 	opts := generateOptions{
 		out:      os.Stdout,
-		Preamble: fmt.Sprintf("// generated using github.com/32leaves/bel on %s\n// DO NOT MODIFY\n", time.Now()),
+		Preamble: fmt.Sprintf("// generated using github.com/laknoll/bel on %s\n// DO NOT MODIFY\n", time.Now()),
 	}
 	for _, c := range cfg {
 		c(&opts)
