@@ -19,7 +19,7 @@ type DoSomethingReq struct {
 }
 
 func TestParsedSourceDocHandler(t *testing.T) {
-	handler, err := NewParsedSourceDocHandler(".", "github.com/32leaves/")
+	handler, err := NewParsedSourceDocHandler(".", "github.com/laknoll/")
 	if err != nil {
 		t.Error(err)
 		return
